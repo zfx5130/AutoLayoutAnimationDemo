@@ -26,7 +26,7 @@
 }
 
 - (void)setupNavigation {
-    self.title = @"animation2";
+    self.title = @"Animation2";
     UIBarButtonItem *leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back"
                                                                           style:UIBarButtonItemStyleDone
                                                                          target:self
