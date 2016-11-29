@@ -8,21 +8,46 @@
 
 #import "ViewController.h"
 
+#import "AutolayoutOneViewController.h"
+#import "AutoLayoutTwoViewController.h"
+#import "AutoLayoutThreeViewController.h"
+
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
 
+#pragma mark - lifeCycle
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+}
+
+
+#pragma mark - Handlers
+
+- (IBAction)animation:(UIButton *)sender {
+    [self swapViewControllerWithIndex:sender.tag];
+}
+
+- (void)swapViewControllerWithIndex:(NSInteger)index {
+    
+    UIViewController *viewController;
+    if (index == 1) {
+        viewController = [[AutolayoutOneViewController alloc] init];
+    } else if (index == 2) {
+        viewController = [[AutoLayoutTwoViewController alloc] init];
+    } else  {
+        viewController = [[AutoLayoutThreeViewController alloc] init];
+    }
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
+    [self presentViewController:navigationController animated:YES completion:nil];
 }
 
 

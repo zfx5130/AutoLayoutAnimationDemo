@@ -15,6 +15,12 @@
 		84A6F8871DED4D8E00BD55BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A6F8851DED4D8E00BD55BA /* LaunchScreen.storyboard */; };
 		84A6F8921DED4D8E00BD55BA /* AutoLayoutAnimationDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A6F8911DED4D8E00BD55BA /* AutoLayoutAnimationDemoTests.m */; };
 		84A6F89D1DED4D8E00BD55BA /* AutoLayoutAnimationDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A6F89C1DED4D8E00BD55BA /* AutoLayoutAnimationDemoUITests.m */; };
+		84A6F8AE1DED5E9A00BD55BA /* AutolayoutOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A6F8AC1DED5E9A00BD55BA /* AutolayoutOneViewController.m */; };
+		84A6F8AF1DED5E9A00BD55BA /* AutolayoutOneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A6F8AD1DED5E9A00BD55BA /* AutolayoutOneViewController.xib */; };
+		84A6F8B31DED605300BD55BA /* AutoLayoutTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A6F8B11DED605300BD55BA /* AutoLayoutTwoViewController.m */; };
+		84A6F8B41DED605300BD55BA /* AutoLayoutTwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A6F8B21DED605300BD55BA /* AutoLayoutTwoViewController.xib */; };
+		84A6F8B81DED607200BD55BA /* AutoLayoutThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A6F8B61DED607200BD55BA /* AutoLayoutThreeViewController.m */; };
+		84A6F8B91DED607200BD55BA /* AutoLayoutThreeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A6F8B71DED607200BD55BA /* AutoLayoutThreeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,15 @@
 		84A6F8981DED4D8E00BD55BA /* AutoLayoutAnimationDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoLayoutAnimationDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A6F89C1DED4D8E00BD55BA /* AutoLayoutAnimationDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutAnimationDemoUITests.m; sourceTree = "<group>"; };
 		84A6F89E1DED4D8E00BD55BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84A6F8AB1DED5E9A00BD55BA /* AutolayoutOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutolayoutOneViewController.h; sourceTree = "<group>"; };
+		84A6F8AC1DED5E9A00BD55BA /* AutolayoutOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutolayoutOneViewController.m; sourceTree = "<group>"; };
+		84A6F8AD1DED5E9A00BD55BA /* AutolayoutOneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AutolayoutOneViewController.xib; sourceTree = "<group>"; };
+		84A6F8B01DED605300BD55BA /* AutoLayoutTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoLayoutTwoViewController.h; sourceTree = "<group>"; };
+		84A6F8B11DED605300BD55BA /* AutoLayoutTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutTwoViewController.m; sourceTree = "<group>"; };
+		84A6F8B21DED605300BD55BA /* AutoLayoutTwoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AutoLayoutTwoViewController.xib; sourceTree = "<group>"; };
+		84A6F8B51DED607200BD55BA /* AutoLayoutThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoLayoutThreeViewController.h; sourceTree = "<group>"; };
+		84A6F8B61DED607200BD55BA /* AutoLayoutThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutThreeViewController.m; sourceTree = "<group>"; };
+		84A6F8B71DED607200BD55BA /* AutoLayoutThreeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AutoLayoutThreeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +116,7 @@
 		84A6F8761DED4D8E00BD55BA /* AutoLayoutAnimationDemo */ = {
 			isa = PBXGroup;
 			children = (
+				84A6F8AA1DED52CF00BD55BA /* animationViewController */,
 				84A6F87A1DED4D8E00BD55BA /* AppDelegate.h */,
 				84A6F87B1DED4D8E00BD55BA /* AppDelegate.m */,
 				84A6F87D1DED4D8E00BD55BA /* ViewController.h */,
@@ -138,6 +154,22 @@
 				84A6F89E1DED4D8E00BD55BA /* Info.plist */,
 			);
 			path = AutoLayoutAnimationDemoUITests;
+			sourceTree = "<group>";
+		};
+		84A6F8AA1DED52CF00BD55BA /* animationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84A6F8AB1DED5E9A00BD55BA /* AutolayoutOneViewController.h */,
+				84A6F8AC1DED5E9A00BD55BA /* AutolayoutOneViewController.m */,
+				84A6F8AD1DED5E9A00BD55BA /* AutolayoutOneViewController.xib */,
+				84A6F8B01DED605300BD55BA /* AutoLayoutTwoViewController.h */,
+				84A6F8B11DED605300BD55BA /* AutoLayoutTwoViewController.m */,
+				84A6F8B21DED605300BD55BA /* AutoLayoutTwoViewController.xib */,
+				84A6F8B51DED607200BD55BA /* AutoLayoutThreeViewController.h */,
+				84A6F8B61DED607200BD55BA /* AutoLayoutThreeViewController.m */,
+				84A6F8B71DED607200BD55BA /* AutoLayoutThreeViewController.xib */,
+			);
+			path = animationViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +239,7 @@
 				TargetAttributes = {
 					84A6F8731DED4D8E00BD55BA = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = ZK9A286AA6;
 						ProvisioningStyle = Automatic;
 					};
 					84A6F88C1DED4D8E00BD55BA = {
@@ -246,6 +279,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A6F8AF1DED5E9A00BD55BA /* AutolayoutOneViewController.xib in Resources */,
+				84A6F8B41DED605300BD55BA /* AutoLayoutTwoViewController.xib in Resources */,
+				84A6F8B91DED607200BD55BA /* AutoLayoutThreeViewController.xib in Resources */,
 				84A6F8871DED4D8E00BD55BA /* LaunchScreen.storyboard in Resources */,
 				84A6F8841DED4D8E00BD55BA /* Assets.xcassets in Resources */,
 				84A6F8821DED4D8E00BD55BA /* Main.storyboard in Resources */,
@@ -273,6 +309,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A6F8B81DED607200BD55BA /* AutoLayoutThreeViewController.m in Sources */,
+				84A6F8AE1DED5E9A00BD55BA /* AutolayoutOneViewController.m in Sources */,
+				84A6F8B31DED605300BD55BA /* AutoLayoutTwoViewController.m in Sources */,
 				84A6F87F1DED4D8E00BD55BA /* ViewController.m in Sources */,
 				84A6F87C1DED4D8E00BD55BA /* AppDelegate.m in Sources */,
 				84A6F8791DED4D8E00BD55BA /* main.m in Sources */,
@@ -424,7 +463,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZK9A286AA6;
 				INFOPLIST_FILE = AutoLayoutAnimationDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = thomas.AutoLayoutAnimationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -435,7 +476,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZK9A286AA6;
 				INFOPLIST_FILE = AutoLayoutAnimationDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = thomas.AutoLayoutAnimationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

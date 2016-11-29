@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AutolayoutOneViewController">
+            <connections>
+                <outlet property="leftViewTraillingConstraint" destination="WVX-G8-q7J" id="3U6-RK-X2N"/>
+                <outlet property="rightViewTraillingConstraint" destination="qGv-tC-97t" id="VFB-FA-mbI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Coj-9u-ffm" userLabel="Center View">
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k8P-aY-6AB" userLabel="Left View">
+                            <color key="backgroundColor" red="0.98039215690000003" green="0.26274509800000001" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8CC-2a-2Eg" userLabel="Right View">
+                            <color key="backgroundColor" red="0.98039215690000003" green="0.96745640814686285" blue="0.30829860164240364" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="8CC-2a-2Eg" firstAttribute="top" secondItem="Coj-9u-ffm" secondAttribute="top" id="77J-Pe-yqw"/>
+                        <constraint firstItem="k8P-aY-6AB" firstAttribute="top" secondItem="Coj-9u-ffm" secondAttribute="top" id="8Zx-H4-dt0"/>
+                        <constraint firstAttribute="bottom" secondItem="k8P-aY-6AB" secondAttribute="bottom" id="BCo-6n-YUE"/>
+                        <constraint firstAttribute="trailing" secondItem="k8P-aY-6AB" secondAttribute="trailing" priority="750" constant="13" id="Cvw-13-KxN"/>
+                        <constraint firstItem="8CC-2a-2Eg" firstAttribute="width" secondItem="k8P-aY-6AB" secondAttribute="width" id="FwJ-bx-9Wd"/>
+                        <constraint firstItem="8CC-2a-2Eg" firstAttribute="leading" secondItem="k8P-aY-6AB" secondAttribute="trailing" constant="10" id="WVX-G8-q7J"/>
+                        <constraint firstAttribute="height" constant="200" id="d99-wG-QIG"/>
+                        <constraint firstAttribute="bottom" secondItem="8CC-2a-2Eg" secondAttribute="bottom" id="eWe-bG-dRc"/>
+                        <constraint firstItem="k8P-aY-6AB" firstAttribute="leading" secondItem="Coj-9u-ffm" secondAttribute="leading" constant="12" id="nVY-Xo-KUA"/>
+                        <constraint firstAttribute="trailing" secondItem="8CC-2a-2Eg" secondAttribute="trailing" priority="750" constant="13" id="qGv-tC-97t"/>
+                    </constraints>
+                </view>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rcL-Yu-XRw">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="49" id="Jm9-kb-yeE"/>
+                        <constraint firstAttribute="height" constant="31" id="hVL-oc-Pcc"/>
+                    </constraints>
+                    <connections>
+                        <action selector="switchOn:" destination="-1" eventType="valueChanged" id="Wf1-18-Ew8"/>
+                    </connections>
+                </switch>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Coj-9u-ffm" firstAttribute="top" secondItem="rcL-Yu-XRw" secondAttribute="bottom" constant="50" id="ADt-x3-92k"/>
+                <constraint firstItem="Coj-9u-ffm" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="EFb-qs-JoZ"/>
+                <constraint firstItem="Coj-9u-ffm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="SCZ-ma-7WR"/>
+                <constraint firstAttribute="trailing" secondItem="Coj-9u-ffm" secondAttribute="trailing" id="WrT-4Z-6xv"/>
+                <constraint firstItem="rcL-Yu-XRw" firstAttribute="centerX" secondItem="Coj-9u-ffm" secondAttribute="centerX" id="cLF-Eq-RZx"/>
+                <constraint firstItem="Coj-9u-ffm" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="qFh-Qu-B5F"/>
+            </constraints>
+            <point key="canvasLocation" x="25.5" y="51.5"/>
+        </view>
+    </objects>
+</document>
